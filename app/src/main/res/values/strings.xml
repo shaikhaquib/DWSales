@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TargetSales</string>
+    <string name="error_field_required">Field Required</string>
+    <string name="title_activity_navigation_drawer">TargetSales</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="device_admin_label">SALES ADMIN</string>
+    <string name="device_description">Target Sales required DEVICE ADMIN permission to track sales report and progress effetivly</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="submit">Submit</string>
+</resources>

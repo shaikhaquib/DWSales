@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".Activity.LeadInfoFrom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:text="New Lead Registration" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:fontFamily="serif"
+                android:text="Enter Client Details." />
+
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:background="@drawable/border"
+                    android:padding="8dp"
+                    android:id="@+id/leadName"
+                    android:hint="Name" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:background="@drawable/border"
+                    android:padding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/leadEmail"
+                    android:hint="Email Id" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:padding="8dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:hint="Mobile No."
+                    android:maxLength="10"
+                    android:id="@+id/leadMobile" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:background="@drawable/border"
+                    android:padding="8dp"
+                    android:hint="Location"
+                    android:id="@+id/leadLocation" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:background="@drawable/border"
+                    android:padding="8dp"
+                    android:hint="Remark"
+                    android:id="@+id/leadRemark" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:stateListAnimator="@null"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/ldSubmit"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+</ScrollView>

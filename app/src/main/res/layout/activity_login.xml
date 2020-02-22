@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lgLayout"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_target_mail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/lgLayout"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lgEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            app:passwordToggleDrawable="@drawable/showpass"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:id="@+id/lgPassword"
+                android:inputType="textPassword"
+                android:background="@drawable/border"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/activity_vertical_margin"
+            android:stateListAnimator="@null"
+            android:text="Login"
+            android:onClick="loginService"
+            android:textColor="@color/colorWhite"
+           />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

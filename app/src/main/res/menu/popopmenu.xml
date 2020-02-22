@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Add Information" android:id="@+id/addInfo"/>
+    <item android:title="Assign Executive" android:id="@+id/assign" android:visible="false"/>
+    <item android:title="Comment" android:id="@+id/comment" android:visible="false"/>
+    <item android:title="Add Status" android:id="@+id/addstatus"/>
+    <item android:title="Add Ratings" android:id="@+id/addleadratings"/>
+</menu>

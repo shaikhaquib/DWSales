@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activity.Add_user">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:gravity="center"
+        android:id="@+id/adduser"
+        android:text="CREATE NEW \n USER"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser"
+        android:id="@+id/adduserform"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:id="@+id/fname"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:background="@color/colorWhite"
+                android:hint="First Name"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e0e0e0"/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:background="@color/colorWhite"
+                android:id="@+id/lname"
+                android:hint="Last Name"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/edtempid"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:hint="Empoloyee Id"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/edtemail"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:hint="Email"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/edtmobile"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:maxLength="10"
+            android:background="@color/colorWhite"
+            android:hint="Mobile"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/edtDesig"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:background="@color/colorWhite"
+            android:hint="Designation"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:background="@color/colorWhite"
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+    </LinearLayout>
+</ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduserform"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_effect"
+        android:id="@+id/btnSubmit"
+        />
+
+</RelativeLayout>

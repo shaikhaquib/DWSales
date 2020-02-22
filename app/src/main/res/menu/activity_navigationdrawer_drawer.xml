@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Location Tracker" />
+
+        <item
+            android:id="@+id/nav_Dash"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Dashboard" />
+
+
+        <item
+            android:id="@+id/nav_exe_Dash"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Executive Dashboard" />
+
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add_user"
+            android:title="Add Executive" />
+
+    </group>
+
+    <item android:title="">
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout" />
+    </item>
+
+</menu>

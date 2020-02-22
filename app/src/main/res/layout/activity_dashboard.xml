@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context=".Activity.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Meeting \n Completed"
+                        android:layout_alignParentLeft="true" />
+
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/consumprogrss"
+                        android:layout_centerHorizontal="true"
+                        app:cpb_background_progressbar_color="#f2f2f2"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="40"
+                        android:layout_margin="10dp"
+                        app:cpb_progressbar_color="@android:color/holo_blue_light"
+                        app:cpb_progressbar_width="10dp" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="Scheduled Meeting"
+                android:textSize="12dp"
+                android:id="@+id/scheMeeting"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scheduled Call"
+                android:id="@+id/scheCall"
+                android:textSize="12dp"
+                android:padding="18dp"
+                />
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="12sp"
+                android:text="Scheduled Meetings for the Month"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvMeeting"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:visibility="gone"
+                    android:id="@+id/txterror"/>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="12sp"
+                android:text="Scheduled Calls for the Month"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvCall"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:visibility="gone"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/txterr"/>
+
+            </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dashdatepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:tint="@color/colorWhite"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_meeting_deadlines" />
+
+
+</RelativeLayout>
